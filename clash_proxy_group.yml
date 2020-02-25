@@ -1,0 +1,156 @@
+- name: Proxy
+  type: select
+  proxies:
+  - DIRECT
+  - 🇭🇰 香港节点
+  - 🇨🇳 台湾节点
+  - 🇸🇬 新加坡节点
+  - 🇯🇵 日本节点
+  - 🇺🇲 美国节点
+  - 🚀 手动切换
+
+- name: Domestic
+  type: select
+  proxies:
+  - DIRECT
+  - Proxy
+  - 🚀 手动切换
+
+- name: Others
+  type: select
+  proxies:
+  - Proxy
+  - DIRECT
+  - Domestic
+
+- name: AdBlock
+  type: select
+  proxies:
+  - REJECT
+  - DIRECT
+  - Proxy
+
+- name: Apple
+  type: select
+  proxies:
+  - DIRECT
+  - Proxy
+  - 🇭🇰 香港节点
+  - 🇨🇳 台湾节点
+  - 🇸🇬 新加坡节点
+  - 🇯🇵 日本节点
+  - 🇺🇲 美国节点
+
+- name: Bilibili
+  type: select
+  proxies:
+  - DIRECT
+  - Proxy
+  - 🇭🇰 香港节点
+  - 🇨🇳 台湾节点
+  - 🇸🇬 新加坡节点
+  - 🇯🇵 日本节点
+  - 🇺🇲 美国节点
+
+- name: AsianTV
+  type: select
+  proxies:
+  - DIRECT
+  - Domestic
+  - Proxy
+  - 🇭🇰 香港节点
+  - 🇨🇳 台湾节点
+  - 🇸🇬 新加坡节点
+  - 🇯🇵 日本节点
+  - 🇺🇲 美国节点
+
+- name: GlobalTV
+  type: select
+  proxies:
+  - Proxy
+  - DIRECT
+  - 🇭🇰 香港节点
+  - 🇨🇳 台湾节点
+  - 🇸🇬 新加坡节点
+  - 🇯🇵 日本节点
+  - 🇺🇲 美国节点
+
+- name: Telegram
+  type: select
+  proxies:
+  - Proxy
+  - DIRECT
+  - 🇭🇰 香港节点
+  - 🇨🇳 台湾节点
+  - 🇸🇬 新加坡节点
+  - 🇯🇵 日本节点
+  - 🇺🇲 美国节点
+
+- name: Steam
+  type: select
+  proxies:
+  - Proxy
+  - DIRECT
+  - 🇭🇰 香港节点
+  - 🇨🇳 台湾节点
+  - 🇸🇬 新加坡节点
+  - 🇯🇵 日本节点
+  - 🇺🇲 美国节点
+
+- name: Speedtest
+  type: select
+  proxies:
+  - Proxy
+  - DIRECT
+  - Domestic
+
+- name: Microsoft
+  type: select
+  proxies:
+  - DIRECT
+  - Proxy
+  - 🇭🇰 香港节点
+  - 🇨🇳 台湾节点
+  - 🇸🇬 新加坡节点
+  - 🇯🇵 日本节点
+  - 🇺🇲 美国节点
+
+- name: Netease Music
+  type: select
+  proxies:
+  - DIRECT
+  - Domestic
+
+- name: 🇭🇰 香港节点
+  type: url-test
+  url: http://www.gstatic.com/generate_204
+  interval: 500
+  proxies:
+
+- name: 🇨🇳 台湾节点
+  type: url-test
+  url: http://www.gstatic.com/generate_204
+  interval: 500
+  proxies:
+
+- name: 🇸🇬 新加坡节点
+  type: url-test
+  url: http://www.gstatic.com/generate_204
+  interval: 500
+  proxies:
+
+- name: 🇯🇵 日本节点
+  type: url-test
+  url: http://www.gstatic.com/generate_204
+  interval: 500
+  proxies:
+
+- name: 🇺🇲 美国节点
+  type: url-test
+  url: http://www.gstatic.com/generate_204
+  interval: 500
+  proxies:
+
+- name: 🚀 手动切换
+  type: select
+  proxies:

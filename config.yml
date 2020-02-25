@@ -1,0 +1,10 @@
+# 墙洞规则
+main_rule: https://raw.githubusercontent.com/lhie1/Rules/master/Clash/Rule.yml
+
+# 我的自定义规则
+external_rule:
+
+# 生成的文件存放位置
+saved_repo:
+  ssh: git@github.com:lightjiao/MyGitHub.git # my private repo
+  file_dir: clash
