@@ -1,13 +1,13 @@
 - name: Proxy
   type: select
   proxies:
-  - DIRECT
   - 🇭🇰 香港节点
   - 🇨🇳 台湾节点
   - 🇸🇬 新加坡节点
   - 🇯🇵 日本节点
   - 🇺🇲 美国节点
   - 🚀 手动切换
+  - DIRECT
 
 - name: Domestic
   type: select
