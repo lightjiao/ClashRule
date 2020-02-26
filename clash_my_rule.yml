@@ -1,5 +1,0 @@
-# 哔哩哔哩
-DOMAIN-KEYWORD,bilibili,Bilibili
-
-# m-team主网站加速访问, tracker域名为 tracker.pt.m-team.cc 会走直连
-DOMAIN,pt.m-team.cc,Proxy
