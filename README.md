@@ -5,9 +5,9 @@
 
 ### 如何使用
 #### 安装python依赖 
- ```python
+ ```bash
 pip install requests
-pip install PyYMAL
+pip install PyYAML
 pip install flask
 ```
 #### 启动服务
