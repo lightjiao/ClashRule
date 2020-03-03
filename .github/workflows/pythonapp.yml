@@ -1,6 +1,10 @@
-name: Python application
+name: Check Rules Update
 
 on:
+  # on push for test
+  push:
+    branches: master
+
   schedule:
     # * is a special character in YAML so you have to quote this string
     # UTC+8 = 20
