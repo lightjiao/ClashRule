@@ -3,4 +3,4 @@
 
 # m-team main domain proxy, tracker.pt.m-team.cc stay direct
 - DOMAIN,pt.m-team.cc,Proxy
-- DOMAIN,tracker.pt.m-team.cc,DIRECT
+- DOMAIN,tracker.m-team.cc,DIRECT
