@@ -16,6 +16,28 @@
   - Proxy
   - 🚀 手动切换
 
+- name: Netflix
+  type: select
+  proxies:
+  - Proxy
+  - DIRECT
+  - 🇭🇰 香港节点
+  - 🇨🇳 台湾节点
+  - 🇸🇬 新加坡节点
+  - 🇯🇵 日本节点
+  - 🇺🇲 美国节点
+
+- name: Spotify
+  type: select
+  proxies:
+  - Proxy
+  - DIRECT
+  - 🇭🇰 香港节点
+  - 🇨🇳 台湾节点
+  - 🇸🇬 新加坡节点
+  - 🇯🇵 日本节点
+  - 🇺🇲 美国节点
+
 - name: Others
   type: select
   proxies:
