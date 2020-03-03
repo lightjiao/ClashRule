@@ -111,7 +111,7 @@ def get_rule():
     :return:
     """
     global config
-    with open("./clash-my-rule.yml") as f:
+    with open("config/clash-my-rule.yml") as f:
         my_rule = yaml.safe_load(f)
     r = requests.get(config.rule_url)
     rule = yaml.safe_load(r.text)
@@ -127,14 +127,14 @@ def get_clash_sub(vmess_url):
     """
     # 解析订阅成proxy group（排除掉一些自己不喜欢的节点）
     proxies = get_vmess(vmess_url)
-    with open("./clash-proxy-group.yml", encoding='UTF-8') as f:
+    with open("config/clash-proxy-group.yml", encoding='UTF-8') as f:
         proxy_groups = yaml.safe_load(f)
     proxy_groups = generate_proxy_groups(proxy_groups, proxies)
 
     # 读取lhie1规则，加上自己的规则
     rule = get_rule()
 
-    with open("./clash-config-template.yml", encoding="utf-8") as f:
+    with open("config/clash-config-template.yml", encoding="utf-8") as f:
         template = yaml.safe_load(f)
 
     # 接口返回完整的clash文件
