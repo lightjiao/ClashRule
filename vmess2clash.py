@@ -13,7 +13,11 @@ def get_vmess(url):
     :return:
     """
     r = requests.get(url)
-    vmess_list = base64.b64decode(r.text).decode().split("vmess://")
+    vmess_content = r.text
+    if not vmess_content.endswith("=="):
+        vmess_content += "=="
+
+    vmess_list = base64.b64decode(vmess_content).decode().split("vmess://")
     vmess_list = map(lambda x: base64.b64decode(x + "==").decode(), vmess_list)
     vmess_list = filter(len, vmess_list)
     vmess_list = map(json.loads, vmess_list)
