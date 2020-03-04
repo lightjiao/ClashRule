@@ -4,6 +4,17 @@ import requests
 import datetime
 
 
+class bcolors:
+    HEADER = '\033[95m'
+    OKBLUE = '\033[94m'
+    OKGREEN = '\033[92m'
+    WARNING = '\033[93m'
+    FAIL = '\033[91m'
+    ENDC = '\033[0m'
+    BOLD = '\033[1m'
+    UNDERLINE = '\033[4m'
+
+
 def check_rules_commit():
     """
     检查 lhie1 的rules 是否有最近的commit，如果有，则 exit(-1)
@@ -19,7 +30,7 @@ def check_rules_commit():
     print(r.text)
 
     if len(r.json()) > 0:
-        print("See repo commit: https://github.com/lhie1/Rules/commits/master/Clash/Rule.yml")
+        print(f"{bcolors.OKGREEN}See repo commit: https://github.com/lhie1/Rules/commits/master/Clash/Rule.yml{bcolors.ENDC}")
         exit(233)
 
 
