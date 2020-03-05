@@ -85,7 +85,7 @@ def generate_proxy_groups(proxy_groups: list, proxies: list) -> list:
             sg.append(n["name"])
         elif "台湾" in n["name"]:
             cn.append(n["name"])
-        elif "香港" in n["name"]:
+        elif "港" in n["name"]:
             hk.append(n["name"])
 
     for idx, value in enumerate(proxy_groups):
