@@ -24,13 +24,13 @@ def check_rules_commit():
     # 一天前
     # format YYYY-MM-DDTHH:MM:SSZ
     since = (datetime.datetime.now() - datetime.timedelta(days=1)).strftime("%Y-%m-%dT%H:%M:%SZ")
-    commit_url = "https://api.github.com/repos/lhie1/Rules/commits?path=/Clash/Rule.yml&since={}".format(since)
+    commit_url = "https://api.github.com/repos/lhie1/Rules/commits?path=/Clash/Rule.yaml&since={}".format(since)
     print(commit_url)
     r = requests.get(commit_url)
     print(r.text)
 
     if len(r.json()) > 0:
-        print(f"{bcolors.OKGREEN}See repo commit: https://github.com/lhie1/Rules/commits/master/Clash/Rule.yml{bcolors.ENDC}")
+        print(f"{bcolors.OKGREEN}See repo commit: https://github.com/lhie1/Rules/commits/master/Clash/Rule.yaml{bcolors.ENDC}")
         exit(233)
 
 

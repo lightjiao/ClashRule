@@ -150,7 +150,7 @@ class Config:
         self.rule_url = rule_url
 
 
-config = Config(rule_url="https://raw.githubusercontent.com/lhie1/Rules/master/Clash/Rule.yml")
+config = Config(rule_url="https://raw.githubusercontent.com/lhie1/Rules/master/Clash/Rule.yaml")
 
 if __name__ == '__main__':
     # 将vmess订阅链接当作参数传递进来
