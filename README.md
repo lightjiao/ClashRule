@@ -9,6 +9,7 @@
     
 ### 如何使用
 #### 安装python依赖 
+python >= 3.7.6
  ```bash
 pip install requests
 pip install PyYAML
