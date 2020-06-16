@@ -4,20 +4,18 @@
  - 专门将`bilibili`独立成一个`Proxy Group`
  
 ### Github Actions
- - 每晚 `20:00(UTC+8)🕗` 检查[lhie1](https://github.com/lhie1/Rules) 的`master`分支`/Clash/Rule.yaml`文件最近一天是否有`commit`
+ - 每晚 `20:00(UTC+8)🕗` 检查[lhie1](https://github.com/lhie1/Rules) 的`master`分支`/Clash/Rule.yaml`文件最近七天是否有`commit`
     - 如果有，则`actions`会以`233`为退出码，触发 `actions` 的通知，以提醒更新订阅
     
 ### 如何使用
 #### 安装python依赖 
 python >= 3.7.6
  ```bash
-pip install requests
-pip install PyYAML
-pip install flask
+pip3 install -r requirements.txt
 ```
 #### 启动服务
 ```bash
-python ./vmess-app.py
+python3 ./vmess-app.py
 # 默认服务地址是 127.0.0.1:5000
 ```
 #### 订阅链接
