@@ -1,6 +1,10 @@
 # bilibili
 - DOMAIN-KEYWORD,bilibili,Bilibili
 
-# m-team main domain proxy, tracker.pt.m-team.cc stay direct
+# Unity
+- DOMAIN-KEYWORD,unity,Proxy
+- DOMAIN-KEYWORD,unity3d,Proxy
+
+# m-team
 - DOMAIN,pt.m-team.cc,Proxy
 - DOMAIN,tracker.m-team.cc,DIRECT
