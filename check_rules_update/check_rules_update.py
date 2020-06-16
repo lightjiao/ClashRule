@@ -21,16 +21,23 @@ def check_rules_commit():
     利用 exit(233) 白嫖 github 的notification
     :return:
     """
-    # 一天前
+    # 七天前
     # format YYYY-MM-DDTHH:MM:SSZ
-    since = (datetime.datetime.now() - datetime.timedelta(days=1)).strftime("%Y-%m-%dT%H:%M:%SZ")
-    commit_url = "https://api.github.com/repos/lhie1/Rules/commits?path=/Clash/Rule.yaml&since={}".format(since)
-    print(commit_url)
-    r = requests.get(commit_url)
-    print(r.text)
+    since = (datetime.datetime.now() - datetime.timedelta(days=7)
+             ).strftime("%Y-%m-%dT%H:%M:%SZ")
+    requests_params = {
+        "sha": "master",
+        "path": "/Clash/Rule.yaml",
+        "since": since
+    }
 
-    if len(r.json()) > 0:
-        print(f"{bcolors.OKGREEN}See repo commit: https://github.com/lhie1/Rules/commits/master/Clash/Rule.yaml{bcolors.ENDC}")
+    github_commit_api = "https://api.github.com/repos/lhie1/Rules/commits"
+    response = requests.get(url=github_commit_api, params=requests_params)
+    print(response.url)
+    print(response.text)
+
+    if len(response.json()) > 0:
+        print(f"{bcolors.OKGREEN}See repo commit: {response.url}{bcolors.ENDC}")
         exit(233)
 
 
