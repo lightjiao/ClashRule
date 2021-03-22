@@ -4,3 +4,6 @@
 # m-team
 - DOMAIN,pt.m-team.cc,Proxy
 - DOMAIN,tracker.m-team.cc,DIRECT
+
+# V2EX
+- DOMAIN-KEYWORD,v2ex,Proxy
